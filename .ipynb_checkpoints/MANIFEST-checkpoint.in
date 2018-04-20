@@ -1,0 +1,7 @@
+graft Clav/templates
+graft Clav/static
+include Clav/schema.sql
+
+Clav/__init__.py:
+
+from .Clav import app

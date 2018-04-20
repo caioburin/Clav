@@ -1,0 +1,9 @@
+MANIFEST.in
+Clav/__init__.py
+Clav/flaskhello.py
+Clav/schema.sql
+Clav.egg-info/PKG-INFO
+Clav.egg-info/SOURCES.txt
+Clav.egg-info/dependency_links.txt
+Clav.egg-info/requires.txt
+Clav.egg-info/top_level.txt
