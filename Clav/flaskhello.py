@@ -6,6 +6,15 @@ from flask import Flask, request, session, g, redirect, url_for, abort, \
     
 
 app = Flask(__name__) # create the application instance :)
+
+@app.route("/")
+def main():
+    return render_template('index.html')
+
+@app.route('/showSignUp')
+def showSignUp():
+    return render_template('signup.html')
+ 
 app.config.from_object(__name__) # load config from this file , flaskr.py
 
 # Load default config and override config from an environment variable
@@ -22,3 +31,6 @@ def connect_db():
     rv = sqlite3.connect(app.config['DATABASE'])
     rv.row_factory = sqlite3.Row
     return rv
+
+if __name__ == "__main__":
+    app.run()
